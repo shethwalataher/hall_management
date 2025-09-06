@@ -72,7 +72,7 @@ def reply_whatsapp():
             msg.body("⚠️ Please reply with either `Day` or `Night`.")
 
     # Already completed
-      elif user_state.get('step') == 'completed':
+    elif user_state.get('step') == 'completed':
         msg.body("✅ Your booking has already been recorded. If you want to make a new booking, please type 'hi'.")
 
     #Unknown flow
