@@ -11,11 +11,12 @@ def reply_whatsapp():
 
     # Respond to "hi" or similar
     if incoming_msg in ['hi', 'hello', 'hey']:
-        msg.body("👋 Hello! Welcome to our service. How can I help you today?")
+        msg.body("Hello! Welcome to Hall Booking System of Tayebi Mohallah(Mumbai).")
     else:
-        msg.body("😊 Welcome! Feel free to ask me anything.")
+        msg.body("Welcome to Hall Booking System of Tayebi Mohallah(Mumbai).")
 
     return str(response)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
+
