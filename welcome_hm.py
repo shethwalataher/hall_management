@@ -72,12 +72,12 @@ def reply_whatsapp():
             msg.body("⚠️ Please reply with either `Day` or `Night`.")
 
     # Already completed
-    # elif user_state.get('step') == 'completed':
-       # msg.body("✅ Your booking has already been recorded. If you want to make a new booking, please type 'hi'.")
+      elif user_state.get('step') == 'completed':
+        msg.body("✅ Your booking has already been recorded. If you want to make a new booking, please type 'hi'.")
 
-    # Unknown flow
-    else:
-        msg.body("Welcome to the Hall Booking System of Tayebi Mohallah (Mumbai).\nPlease type 'hi' to start your booking.")
+    #Unknown flow
+    #else:
+        #msg.body("Welcome to the Hall Booking System of Tayebi Mohallah (Mumbai).\nPlease type 'hi' to start your booking.")
 
     return str(response)
 
